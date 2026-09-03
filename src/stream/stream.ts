@@ -704,7 +704,7 @@ export function convertTools(
 }
 
 function mapToolChoiceMode(
-  toolChoice: AntigravityStreamOptions["toolChoice"],
+  toolChoice: string | undefined,
 ): GeminiToolCallingMode {
   if (toolChoice === ToolChoice.None) return GeminiToolCallingMode.None;
   if (toolChoice === ToolChoice.Any || toolChoice === ToolChoice.Required)
